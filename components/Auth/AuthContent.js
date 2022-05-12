@@ -17,9 +17,9 @@ function AuthContent({ isLogin, onAuthenticate }) {
 
   function switchAuthModeHandler() {
     if (isLogin) {
-      navigation.replace('Signup');
+      navigation.replace('Cadastrar');
     } else {
-      navigation.replace('Login');
+      navigation.replace('Logar');
     }
   }
 
@@ -60,7 +60,7 @@ function AuthContent({ isLogin, onAuthenticate }) {
       />
       <View style={styles.buttons}>
         <FlatButton onPress={switchAuthModeHandler}>
-          {isLogin ? 'Create a new user' : 'Log in instead'}
+          {isLogin ? 'Criar novo usuário' : 'Logar usuário'}
         </FlatButton>
       </View>
     </View>
